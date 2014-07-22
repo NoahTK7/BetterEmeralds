@@ -19,6 +19,10 @@ eclipse/
 /eclipse/
 /eclipse/*
 
+.gradle/
+/.gradle/
+/.gradle/*
+
 *.iml
 *.ipr
 *.iws
