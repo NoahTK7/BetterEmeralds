@@ -1,0 +1,14 @@
+
+itemGroup.betteremeralds=Better Emeralds!
+
+item.betteremeralds:emeraldPickaxe.name=Emerald Pickaxe
+item.betteremeralds:emeraldAxe.name=Emerald Axe
+item.betteremeralds:emeraldShovel.name=Emerald Shovel
+item.betteremeralds:emeraldHoe.name=Emerald Hoe
+
+item.betteremeralds:emeraldSword.name=Emerald Sword
+
+item.betteremeralds:emeraldHelmet.name=Emerald Helmet
+item.betteremeralds:emeraldChestplate.name=Emerald Chestplate
+item.betteremeralds:emeraldLeggings.name=Emerald Leggings
+item.betteremeralds:emeraldBoots.name=Emerald Boots
