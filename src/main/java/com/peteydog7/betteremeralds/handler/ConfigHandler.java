@@ -1,5 +1,6 @@
 package com.peteydog7.betteremeralds.handler;
 
+import com.peteydog7.betteremeralds.BetterEmeralds;
 import com.peteydog7.betteremeralds.reference.Configs;
 import com.peteydog7.betteremeralds.reference.Reference;
 import cpw.mods.fml.client.event.ConfigChangedEvent;
@@ -27,7 +28,8 @@ public class ConfigHandler {
 
     private static void loadConfig(){
 
-        toolDurability = configuration.getInt("Tool Durability", Configuration.CATEGORY_GENERAL, 2000, 1000, 4000, "Emerald Tool Durability (Diamond = 1561)");
+        //toolDurability = configuration.getInt("Tool Durability", Configuration.CATEGORY_GENERAL, 2000, 1000, 4000, "Emerald Tool Durability (Diamond = 1561)").setConfigEntryClass(BetterEmeralds.proxy.getSliderClass());
+        toolDurability = (int) configuration.get(Configuration.CATEGORY_GENERAL, "Tool Durability", 2000, "Emerald Tool Durability (Diamond = 1561)", 1000, 4000).setConfigEntryClass(BetterEmeralds.proxy.getSliderClass()).getInt();
         armorDurability = configuration.getInt("Armor Durability", Configuration.CATEGORY_GENERAL, 50, 30, 70, "Emerald Armor Durability Factor (Diamond = 33");
         toolSpeed = configuration.getInt("Tool Speed", Configuration.CATEGORY_GENERAL, 16, 10, 20, "Emerald Tool Speed (Diamond = 12)");
         armorStrength = configuration.getInt("Armor Strngth", Configuration.CATEGORY_GENERAL, 4, 1, 5, "Armor Strength Factor (Diamond = 3)");
