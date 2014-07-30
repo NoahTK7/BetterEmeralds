@@ -1,5 +1,6 @@
 package com.peteydog7.betteremeralds.reference;
 
+import com.peteydog7.betteremeralds.utility.LogHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
@@ -10,17 +11,17 @@ public class Material {
 
     public static final class Tools {
 
-        private int durability = Configs.toolDurability;
-        private float speed = ((float) Configs.toolSpeed);
+        private static int durability = Configs.toolDurability;
+        private static float speed = ((float) Configs.toolSpeed);
 
-        public static final Item.ToolMaterial M_EMERALD = EnumHelper.addToolMaterial(Names.Materials.M_EMERALD, 4, Configs.toolDurability, Configs.toolSpeed, 4, 30);
+        public static final Item.ToolMaterial M_EMERALD = EnumHelper.addToolMaterial(Names.Materials.M_EMERALD, 4, durability, speed, 4, 30);
 
     }
 
     public static final class Armor {
 
         private static int durability = Configs.armorDurability;
-        private static int[] strength = getStrength(Configs.armorStength);
+        private static int[] strength = getStrength(Configs.armorStrength);
 
         public static final ItemArmor.ArmorMaterial M_EMERALD = EnumHelper.addArmorMaterial(Names.Materials.M_EMERALD, durability, strength, 30);
 
@@ -47,6 +48,9 @@ public class Material {
                 default:
                     return new int[]{4, 9, 7, 4};
             }
+
+            LogHelper.warn(strength.toString());
+
             return strength;
         }
 

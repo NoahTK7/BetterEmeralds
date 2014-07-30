@@ -12,10 +12,12 @@ public class ClientProxy extends CommonProxy {
 
     }
 
+    /*
     @Override
     public Class<? extends GuiConfigEntries.IConfigEntry> getSliderClass()
     {
         return GuiConfigEntries.NumberSliderEntry.class;
     }
+    */
 
 }

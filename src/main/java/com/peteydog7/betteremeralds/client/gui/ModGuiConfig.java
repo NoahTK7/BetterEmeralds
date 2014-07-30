@@ -16,11 +16,11 @@ public class ModGuiConfig extends GuiConfig{
 
     public ModGuiConfig(GuiScreen guiScreen){
 
-        List<IConfigElement> elements = buildGui();
+        //List<IConfigElement> elements = buildGui();
 
         super(
                 guiScreen,
-                new ConfigElement(elements),
+                new ConfigElement(ConfigHandler.configuration.getCategory(Configuration.CATEGORY_GENERAL)).getChildElements(),
                 Reference.MOD_ID,
                 false,
                 true,
@@ -30,6 +30,7 @@ public class ModGuiConfig extends GuiConfig{
 
     }
 
+    /*
     protected List<IConfigElement> buildGui() {
 
         List<IConfigElement> list = getConfigElements();
@@ -54,5 +55,6 @@ public class ModGuiConfig extends GuiConfig{
         return list;
 
     }
+    */
 
 }

@@ -26,3 +26,7 @@ eclipse/
 *.iml
 *.ipr
 *.iws
+
+run/
+/run/
+/run/*

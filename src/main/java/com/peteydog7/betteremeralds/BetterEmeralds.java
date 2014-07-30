@@ -2,6 +2,7 @@ package com.peteydog7.betteremeralds;
 
 import com.peteydog7.betteremeralds.handler.ConfigHandler;
 import com.peteydog7.betteremeralds.init.ModItems;
+import com.peteydog7.betteremeralds.init.Recipes;
 import com.peteydog7.betteremeralds.proxy.IProxy;
 import com.peteydog7.betteremeralds.reference.Reference;
 import com.peteydog7.betteremeralds.utility.LogHelper;
@@ -41,7 +42,7 @@ public class BetterEmeralds {
 
         LogHelper.info("Begin Intialization Stage");
 
-
+        Recipes.init();
 
         LogHelper.info("Intialization Stage Complete");
 
