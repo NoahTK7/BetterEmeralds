@@ -30,6 +30,8 @@ public class BetterEmeralds {
         ConfigHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigHandler());
 
+        proxy.registerKeyBindings();
+
         ModItems.init();
         //ModBlocks.init();
 

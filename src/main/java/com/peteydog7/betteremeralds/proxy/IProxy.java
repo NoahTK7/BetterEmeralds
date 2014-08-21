@@ -4,8 +4,10 @@ import cpw.mods.fml.client.config.GuiConfigEntries;
 
 public interface IProxy {
 
-    public int addArmor(String armor);
+    public abstract int addArmor(String armor);
 
-    public Class<? extends GuiConfigEntries.IConfigEntry> getSliderClass();
+    public abstract Class<? extends GuiConfigEntries.IConfigEntry> getSliderClass();
+
+    public abstract void registerKeyBindings();
 
 }

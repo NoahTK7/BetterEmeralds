@@ -1,14 +1,28 @@
 
+# Creative Tabs #
 itemGroup.betteremeralds=Better Emeralds!
 
+# Items #
+
+    # Tools #
 item.betteremeralds:emeraldPickaxe.name=Emerald Pickaxe
 item.betteremeralds:emeraldAxe.name=Emerald Axe
 item.betteremeralds:emeraldShovel.name=Emerald Shovel
 item.betteremeralds:emeraldHoe.name=Emerald Hoe
 
+    # Weapons #
 item.betteremeralds:emeraldSword.name=Emerald Sword
 
+    # Armor #
 item.betteremeralds:emeraldHelmet.name=Emerald Helmet
 item.betteremeralds:emeraldChestplate.name=Emerald Chestplate
 item.betteremeralds:emeraldLeggings.name=Emerald Leggings
 item.betteremeralds:emeraldBoots.name=Emerald Boots
+
+# Blocks #
+
+
+# Keys #
+keys.betteremeralds.category=Better Emeralds!
+keys.betteremeralds.charge=Charge
+keys.betteremeralds.release=Release
